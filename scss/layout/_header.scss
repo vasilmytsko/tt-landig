@@ -1,0 +1,63 @@
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+
+header {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    background: $bg-color url('../img/header-img.png') no-repeat;
+    background-size: cover;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo {
+    display: block;
+    font-family: $logo-font-family;
+    font-size: 2.1rem;
+    line-height: 26px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__fb {
+    margin-right: 20px;
+}
+
+.header__content {
+    padding: 130px 0 200px 0;
+}
+
+.header__titel {
+    letter-spacing: 0.016em;
+    .header__subtitle {
+        font-family: $base-font-family;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    
+    .header__content {
+        text-align: center;
+    }
+    .header__titel {
+        font-size: 3.4rem;
+    line-height: 56px;
+    }
+   
+}
+
